@@ -13,7 +13,7 @@ describe('<Header />', () => {
       const wrapper = shallow(<Header />);
       expect(wrapper.containsMatchingElement(<TopNav />)).toEqual(true);
     });
-    it('Renders InfoModal initially', () => {
+    it('Renders InfoModal when toggled', () => {
       const wrapper = shallow(<Header />);
       wrapper.instance().toggleInfoModal(true);
       expect(wrapper.containsMatchingElement(<InfoModal />)).toEqual(true);
